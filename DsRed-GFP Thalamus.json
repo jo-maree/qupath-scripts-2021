@@ -1,0 +1,53 @@
+{
+  "object_classifier_type": "CompositeClassifier",
+  "classifiers": [
+    {
+      "object_classifier_type": "SimpleClassifier",
+      "function": {
+        "classifier_fun": "ClassifyByMeasurementFunction",
+        "measurement": "Cell: DsRed mean",
+        "pathClassEquals": {
+          "name": "DsRed",
+          "colorRGB": -65536
+        },
+        "pathClassAbove": {
+          "name": "DsRed",
+          "colorRGB": -65536
+        },
+        "threshold": 325.0
+      },
+      "pathClasses": [
+        {
+          "name": "DsRed",
+          "colorRGB": -65536
+        }
+      ],
+      "filter": "DETECTIONS_ALL",
+      "timestamp": 1609807188584
+    },
+    {
+      "object_classifier_type": "SimpleClassifier",
+      "function": {
+        "classifier_fun": "ClassifyByMeasurementFunction",
+        "measurement": "Cell: GFP mean",
+        "pathClassEquals": {
+          "name": "GFP",
+          "colorRGB": -16711936
+        },
+        "pathClassAbove": {
+          "name": "GFP",
+          "colorRGB": -16711936
+        },
+        "threshold": 200
+      },
+      "pathClasses": [
+        {
+          "name": "GFP",
+          "colorRGB": -16711936
+        }
+      ],
+      "filter": "DETECTIONS_ALL",
+      "timestamp": 1609806955990
+    }
+  ]
+}
